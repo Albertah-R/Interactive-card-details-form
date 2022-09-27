@@ -1,0 +1,56 @@
+/*Fonts*/
+/*font-family: 'Space Grotesk', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+/*Root*/
+:root{
+    /*Couleurs*/
+    --blue : hsl(228, 45%, 44%);
+    --red : hsl(0, 100%, 66%);
+    --white : hsl(0, 0%, 100%);
+
+    /*Linear gradient (active input border)*/
+    --lavande:  hsl(249, 99%, 64%);
+    --aubergine :hsl(278, 94%, 30%);
+
+    --lightGraylishViolet : hsl(270, 3%, 87%);
+    --darkGraylishViolet : hsl(279, 6%, 55%);
+    --veryDarkViolet : hsl(278, 68%, 11%) ;
+
+    /*Font-weight*/
+    --medium : 500;
+}
+/*Typographie*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+
+/*Base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: var(--medium);
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+}
+/**/
+/**/
+/**/
+
+/*Footer*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: var(--blue); }
+
+/*Responsive design*/
+@media (max-width:375px){
+    /*Mobile*/
+}
+
+
+
