@@ -10,38 +10,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Interactive card details form</title>
-
-
 </head>
 
 <body>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+  <main>
 
-  000
+    <div class="container">
+      <div class="card-front">
+        <img class="card-logo" src="assets/images/card-logo.svg" alt="logo">
+        <div class="card__content">
+          <h1>0000 0000 0000 0000</h1>
+          <br>
+          <p>JANE APPLESEED</p>
+          <P class="mm__yy">00/00</P>
+          <br>
+        </div>
+      </div>
+      <div class="card-back">
+        <br>
+        <p class="cvv"><b>000</b></p>
+      </div>
+    </div>
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+    <div class="card__form">
+      <form action="#" method="post">
+        <div class="card__body--form">
+          <div class="card__body--form--input">
+            <label for="cardName">Cardholder name</label>
+            <br>
+            <input type="text" name="cardName" id="cardName" placeholder="e.g Jane Appleseed">
+          </div>
+          <div class="card__body--form--input">
+            <label for="cardNumber">Card Number</label>
+            <br>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g 0000 0000 0000 0000">
+          </div>
+          <div class="card__body--form--date-cvv">
+            <label for="cardDate">Exp. Date</label>
+            <label for="cardCvv" id="cvc">CVC</label>
+            <br>
+            <input type="text" name="cardDate" id="cardDate" placeholder="MM">
+            <input type="text" name="cardDate" id="cardDate" placeholder="YY">                        
+            <input type="text" name="cardCvv" id="cardCvv" placeholder=" e.g 123">
+          </div>
+          <br>
+          <div class="card__footer">
+            <div class="card__footer--button">
+              <button type="submit">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
 
   <footer>
     <div class="attribution">

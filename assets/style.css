@@ -1,56 +1,213 @@
 /*Fonts*/
 /*font-family: 'Space Grotesk', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
 /*Root*/
-:root{
-    /*Couleurs*/
-    --blue : hsl(228, 45%, 44%);
-    --red : hsl(0, 100%, 66%);
-    --white : hsl(0, 0%, 100%);
+:root {
+  /*Couleurs*/
+  --blue: hsl(228, 45%, 44%);
+  --red: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
 
-    /*Linear gradient (active input border)*/
-    --lavande:  hsl(249, 99%, 64%);
-    --aubergine :hsl(278, 94%, 30%);
+  /*Linear gradient (active input border)*/
+  --lavande: hsl(249, 99%, 64%);
+  --aubergine: hsl(278, 94%, 30%);
 
-    --lightGraylishViolet : hsl(270, 3%, 87%);
-    --darkGraylishViolet : hsl(279, 6%, 55%);
-    --veryDarkViolet : hsl(278, 68%, 11%) ;
+  --lightGraylishViolet: hsl(270, 3%, 87%);
+  --darkGraylishViolet: hsl(279, 6%, 55%);
+  --veryDarkViolet: hsl(278, 68%, 11%);
 
-    /*Font-weight*/
-    --medium : 500;
+  /*Font-weight*/
+  --medium: 500;
+  --ligther: 200;
+  --bold: 600;
 }
 /*Typographie*/
-h1,
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  margin: 14px;
+  padding: 15px;
+}
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
+p {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0px 25px 15px 10px;
+  padding: 0px 5px 5px 20px;
+}
 a,
+label {
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 12px;
+  font-weight: var(--bold);
+  color: var(--veryDarkViolet);
+  letter-spacing: 0.2rem;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 40px 0px;
+}
 
 /*Base*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight: var(--medium);
-    font-size: 18px;
-    text-decoration: none;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: var(--medium);
+  font-size: 100%;
+  text-decoration: none;
+  list-style: none;
 }
-/**/
-/**/
-/**/
+
+/*Layout*/
+
+main {
+  display: flex;
+  background-color: var(--white);
+}
+
+.container {
+  background: url(/assets/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 35%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Card front and back*/
+.card-front,
+.card-back {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: var(--white);
+}
+
+.card-front {
+  background: url(/assets/images/bg-card-front.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-logo {
+  margin: -30px 0px 20px 30px;
+  width: 20%;
+}
+
+.card__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--ligther);
+  font-variant: small-caps;
+  line-height: 1.6;
+}
+
+.mm__yy {
+  margin-left: 162px;
+}
+
+.card-back {
+  background: url(/assets/images/bg-card-back.png) no-repeat;
+}
+
+.cvv {
+  margin-left: 330px;
+  margin-top: 90px;
+  font-weight: var(--ligther);
+  font-variant: small-caps;
+  line-height: 1.6;
+}
+
+/*Form*/
+.card__form {
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.card__body--form--input {
+padding: 15px 0px;
+}
+
+
+input {
+  height: 50px;
+  border: 1px solid var(--lightGraylishViolet);
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 1rem;
+  font-size: 1rem;
+  font-weight: var(--medium);
+  color: var(--veryDarkViolet);
+  background-color: var(--white);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--darkGraylishViolet);
+}
+
+input::placeholder {
+  color: var(--darkGraylishViolet);
+}
+
+#cardName,
+#cardNumber {
+  width: 80%;
+}
+
+#cardDate {
+  width: 10%;
+}
+
+#cvc{
+  margin-left: 105px;
+} 
+
+/*Button*/
+button {
+  border: none;
+  background-color: var(--veryDarkViolet);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
 /*Footer*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: var(--blue); }
-
-/*Responsive design*/
-@media (max-width:375px){
-    /*Mobile*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+.attribution a {
+  color: var(--blue);
 }
 
-
-
+/*Responsive design*/
+@media (max-width: 375px) {
+  /*Mobile*/
+  main {
+    background-image: url(assets/images/bg-main-mobile.png);
+  }
+}
