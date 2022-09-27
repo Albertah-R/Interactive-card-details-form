@@ -145,9 +145,8 @@ main {
 }
 
 .card__body--form--input {
-padding: 15px 0px;
+  padding: 15px 0px;
 }
-
 
 input {
   height: 50px;
@@ -167,7 +166,11 @@ input:focus {
 }
 
 input::placeholder {
-  color: var(--darkGraylishViolet);
+  color: var(--lightGraylishViolet);
+  font-weight: var(--bold);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
 }
 
 #cardName,
@@ -179,15 +182,16 @@ input::placeholder {
   width: 10%;
 }
 
-#cvc{
+#cvc {
   margin-left: 105px;
-} 
+}
 
 /*Button*/
 button {
   border: none;
   background-color: var(--veryDarkViolet);
   color: var(--white);
+  font-weight: var(--bold);
   padding: 1rem 2rem;
   margin: 0 1rem;
   border-radius: 5px;
