@@ -19,17 +19,17 @@
     <div class="container">
       <div class="card-front">
         <img class="card-logo" src="assets/images/card-logo.svg" alt="logo">
-        <div class="card__content">
-          <h1>0000 0000 0000 0000</h1>
+        <div class="card__content" id="card__content">
+          <h1 id="number"></h1>
           <br>
-          <p>JANE APPLESEED</p>
-          <P class="mm__yy">00/00</P>
+          <p id="username"></p>
+          <P id="mm__yy"></P>
           <br>
         </div>
       </div>
       <div class="card-back">
         <br>
-        <p class="cvv"><b>000</b></p>
+        <p id="cvv"><b></b></p>
       </div>
     </div>
 
@@ -47,7 +47,7 @@
             <input type="text" name="cardNumber" id="cardNumber" placeholder="e.g 0000 0000 0000 0000">
           </div>
           <div class="card__body--form--date-cvv">
-            <label for="cardDate">Exp. Date</label>
+            <label for="cardDate" id="date">Exp. Date (MM/YY)</label>
             <label for="cardCvv" id="cvc">CVC</label>
             <br>
             <input type="text" name="cardDate" id="cardDate" placeholder="MM">
