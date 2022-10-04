@@ -24,7 +24,6 @@
 }
 /*Typographie*/
 h1 {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 0.2rem;
   margin: 14px;
@@ -36,11 +35,13 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Space Grotesk", sans-serif;
   margin: 0px 25px 15px 10px;
   padding: 0px 5px 5px 20px;
 }
-a,
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
 label {
   text-transform: uppercase;
   font-family: "Space Grotesk", sans-serif;
@@ -62,6 +63,7 @@ label {
   font-size: 100%;
   text-decoration: none;
   list-style: none;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /*Layout*/
@@ -172,7 +174,7 @@ input {
 input:focus {
   outline: none;
   border: 1px solid var(--darkGraylishViolet);
-  /*   background: linear-gradient(
+  /*   border-color: linear-gradient(
     90deg,
     var(--lavande) 0%,
     var(--aubergine) 100%
@@ -196,6 +198,7 @@ input::placeholder {
   width: 70px;
   padding: 3px;
   margin-right: 0.1rem;
+  text-align: center;
 }
 
 #cardCvv {
@@ -214,7 +217,7 @@ input::placeholder {
 }
 
 /*Button*/
-button {
+#button {
   border: none;
   background-color: var(--veryDarkViolet);
   color: var(--white);
@@ -222,12 +225,17 @@ button {
   padding: 1rem 2rem;
   margin: 1.3rem 1rem;
   border-radius: 5px;
-  width: 80%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  width: 250px;
+}
+
+.card__footer{
+  margin-top: 20px;
 }
 
 /*Footer*/
+
 .attribution {
   font-size: 11px;
   text-align: center;

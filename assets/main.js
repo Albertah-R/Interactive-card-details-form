@@ -1,4 +1,7 @@
+
+/*TODO*/
 /*Définir les variables et  récupérer les informations dans le formulaire*/
+
 
   /* Vérifier si les champs sont vides et si les informations respectent le format. Input vide + mauvais format, il affichera un message d'alerte. */
   if (u) {
@@ -7,6 +10,7 @@
   } else /*Afficher le nom de l'utilisateur sur la card-front*/ {
     
   }
+  
 
 
 /*Voir les détails des cartes front et back se mettre à jour en temps réel*/
